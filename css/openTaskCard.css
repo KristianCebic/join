@@ -1,0 +1,243 @@
+.cardOpen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    font-size: clamp(14px, 4vw, 17px);
+    font-weight: 400;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.cardOpen::-webkit-scrollbar {
+    width: 10px;
+}
+.input_fieldsEdit{
+    font-size: 17px;
+}
+
+.taskOpen {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.taskOpen span {
+    background-color: #0038ff;
+    padding: 4px 24px 4px 24px;
+    border-radius: 8px;
+}
+
+.taskOpen button {
+    border: none;
+    width: 16px;
+    height: 8px;
+    gap: 10px;
+    background-color: transparent;
+    color: #4589FF;
+    font-size: 23px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: none;
+}
+
+.taskOpen button:hover {
+    background-color: #D2E3FF;
+}
+
+
+.titelOpen h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.descriptionOpen span {
+    font-weight: 400;
+    margin-top: 8px;
+    width: 100%;
+}
+
+.createScrollBehaviorY {
+    height: 10%;
+    width: 100%;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+.datumOpen {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+h3 {
+    font-weight: 700;
+    color: #42526E;
+    font-size: 21px;
+    margin: 0;
+}
+
+
+.priorityOpen {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.assignetNames  {
+   display: flex;
+   gap: 8px;
+   align-items: center;
+} 
+
+.assignetNames .profile-badge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    border-radius: 100%;
+    border: 2px solid white;
+    padding: 3%;
+
+}
+ .assignetToOpen {
+    display: flex;
+    flex-direction: column;
+   gap: 8px;
+} 
+.taskTitleEdit{
+    font-size: 22px;
+}
+
+ .suptasksOpen {
+    display: flex;
+    flex-direction: column;
+   gap: 8px;
+ } 
+
+.BTNMIddle {
+    background-color: #D1D1D1;
+    width: 1px;
+    height: 24px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+
+.deletAndEditOpen {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.deletAndEditOpen button {
+    border: none;
+    color: #0038ff;
+    background-color: transparent;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    gap: 6px;
+    cursor: pointer;
+    box-shadow: none;
+    font-size: 16px;
+}
+
+.deletAndEditOpen button:hover {
+    color: #0038ff;
+    font-weight: 700;
+}
+
+
+/* *************  Checkbox   ************ */
+
+
+[type="checkbox"] {
+    position: relative;
+    left: 15px;
+    top: -4px;
+    z-index: 0;
+    margin-bottom: 22px;
+}
+
+[type="checkbox"]+label::before {
+    width: 22px;
+    height: 18px;
+    background-image: url(../assets/img/checket.png);
+    display: block;
+    content: "";
+    float: left;
+    margin-right: 16px;
+    z-index: 0;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+[type="checkbox"]:checked+label::before {
+    background-image: url(../assets/img/box.png);
+    position: relative;
+
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+
+/************checkbox in add-task-main-section ***************/
+
+assignetToScroll [type="checkbox"] {
+    position: relative;
+    margin-bottom: 0px;
+}
+
+#assignetTo [type="checkbox"]+label {
+    position: relative;
+}
+
+#assignetTo [type="checkbox"]+label::before {
+    width: 22px;
+    height: 18px;
+    background-image: url(../assets/img/checket.png);
+    display: block;
+    content: "";
+    float: left;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#assignetTo [type="checkbox"]:checked+label::before {
+    background-image: url(../assets/img/box.png);
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+
+.addTasksContactFrame{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    width: 100%;
+}
+
+@media (max-width: 770px) {
+    .taskOpen{
+        padding-right: 34px;
+    }
+
+    .openTask {
+        width: 70%;
+        height: 70%;
+    }
+  }
+
+@media (max-width:375px){
+    .taskTitleEdit {
+        font-size: 16px;
+    }
+}

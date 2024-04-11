@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favIcon.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../css/style-sendemail.css" />
+    <script src="../js/resetPasswort.js"></script>
+    <script src="../js/storage.js"></script>
+    <script src="../js/signup.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img
+      src="../assets/img/Logo-middle_white.png"
+      alt="Logo-middle_blue"
+      class="join-logo"
+    />
+    <div class="center">
+      <div class="login-box">
+        <div class="login-header">
+          <button
+            id="arrow-left-btn"
+            onclick="window.location.href='index.html';"
+          >
+            <img
+              src="../assets/img/icon-arrow-left-line-blue.png"
+              alt="icon-arrow-left-line-blue"
+              id="arrow-left"
+            />
+          </button>
+          <h1 class="break-text">I forgot my password</h1>
+        </div>
+
+        <span class="long-text">
+          Don't worry! We will send you an email with the instructions to reset
+          your password.
+        </span>
+
+        <div class="form">
+          <div class="form-outline">
+            <div class="form-inner-field">
+              <input type="email" name="" id="mail" placeholder="Email" />
+              <img src="../assets/img/icon-mail.png" alt="mail" />
+            </div>
+          </div>
+          <img id="sendEmailImg" src="../assets/img/emailSend.png" alt="" />
+        </div>
+
+        <div id="error-message-Email" class="error-message"></div>
+        <button id="sendemail" onclick="sendResetPasswordEmail()">
+          Send me the mail
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

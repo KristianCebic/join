@@ -1,0 +1,112 @@
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/favIcon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/favIcon.png" />
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/summary.css" />
+    <link rel="stylesheet" href="../css/board.css" />
+    <link rel="stylesheet" href="../css/navbarMobile.css" />
+
+    <title>Join</title>
+    <script src="../js/storage.js"></script>
+    <script src="../js/summary.js"></script>
+  </head>
+
+  <body id="bodySummary" onload="summaryinit(), eventListenerForMenuContent('bodySummary')">
+
+    <div w3-include-html="../assets/templates/header.html"></div>
+
+    <div style="display: flex; height: 100vh; width: 100vw;">
+
+      <div w3-include-html="../assets/templates/navBar.html"></div>
+
+        <section class="summary">
+
+          <div class="summaryContent">
+
+            <div id="greeting" class="greeting"></div>
+
+            <div class="deadlineContent">
+              <a href="./board.html" class="deadline">
+                <div>
+                  <div class="urgent-box">
+                    <img src="../assets/img/urgent_summary.png"/>
+                    <p id="allUrgentTasks"></p>
+                  </div>
+                  <div>
+                    <p>Tasks Urgent</p>
+                  </div>
+                </div>
+                <span class="partitionWall"></span>
+                <div>
+                  <h2 id="deadlineDatum"></h2>
+                  <p class="fontSize-23">upcomming Deadline</p>
+                </div>
+              </a>
+
+              <div style="position: relative">
+                <a href="./board.html" class="miniBox taskInBoard">
+                  <div class="task-box">
+                    <img class="borderRadius" src="../assets/img/board.png "/>
+                    <p id="openBoardTask" class="openTaskNr"></p>
+                  </div>
+                  <p class="task-color taskInBoardP">Task in Board</p>
+                </a>
+              </div>
+            </div>
+            
+            <div class="allOpenTask">
+
+              <!-- Tasks to-do -->
+              <a href="./board.html" class="miniBox">
+                <div class="task-box">
+                  <img src="../assets/img/task_summary.png " />
+                  <p id="openTask" class="openTaskNr"></p>
+                </div>
+                <div class="task-color">Tasks To-do</div>
+              </a>
+
+              <!-- Task in Progress -->
+              <a href="./board.html" class="miniBox">
+                <div class="task-box">
+                  <img
+                    class="borderRadius"
+                    src="../assets/img/progress_summary.png "
+                  />
+                  <p id="openProgressTask" class="openTaskNr"></p>
+                </div>
+                <p class="task-color">Task in Progress</p>
+              </a>
+
+              <!-- Awaiting Feedback -->
+              <a href="./board.html" class="miniBox">
+                <div class="task-box">
+                  <img class="borderRadius" src="../assets/img/feedback.png " />
+                  <p id="openFeedbackTask" class="openTaskNr"></p>
+                </div>
+                <p class="task-color">Awaiting Feedback</p>
+              </a>
+
+              <!-- Tasks done -->
+              <a href="./board.html" class="miniBox">
+                <div class="task-box">
+                  <img class="borderRadius" src="../assets/img/Done.png " />
+                  <p id="openDoneTask" class="openTaskNr"></p>
+                </div>
+                <p class="task-color">Tasks Done</p>
+              </a>
+
+            </div>
+          </div>
+
+        </section>
+
+    </div>
+
+    <div w3-include-html="../assets/templates/navbarMobile.html" class="menuListMobile"></div>
+
+  </body>
+
+</html>

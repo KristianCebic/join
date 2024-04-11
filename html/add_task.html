@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favIcon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/add_task.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Josefin+Sans:ital,wght@0,700;1,700&family=Open+Sans:wght@300;600&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/navbarMobile.css" />
+    <script src="../js/contacts.js"></script>
+    <script src="../js/board.js"></script>
+    <script src="../js/contactManagement.js"></script>
+    <script src="../js/dragDropTaskManagement.js"></script>
+    <script src="../js/storage.js"></script>
+    <script src="../js/add_task.js"></script>
+    <script src="../js/add_task2.js"></script>
+</head>
+
+
+<body id="body" onload="init(), createContactChosen(), closeAssignedToDiv(), closeCategoryDiv(), eventListenerForMenuContent('body')">
+
+    <div w3-include-html="../assets/templates/header.html"></div>
+
+    <div id="mainContainer">
+
+        <div w3-include-html="../assets/templates/navBar.html"></div>
+
+        <div id="scroll-container2" class="scroll-container2">
+
+            <div id="title_div" class="input_fields">
+                <input onkeydown="removeWarningTitle()" required id="title" class="input_field" type="text" placeholder="Enter a title">
+            </div>
+
+            <div id="description_div" class="input_fields">
+                <h2>Description</h2>
+                <textarea onkeydown="removeWarningDescription()" required id="description" class="input_field_gray" type="text" placeholder="Enter a Description"></textarea>
+                <img id="cornerImg" src="../assets/img/3 linien.png">
+            </div>
+
+            <div id="dueDate_div" class="input_fields">
+                <h2>Due date</h2>
+                <input onchange="removeWarningDueDate()" id="dueDate" required class="input_field font_size_19px" type="date" placeholder="dd/mm/yyyy">
+            </div>
+
+            <div class="input_fields">
+                <h2>Priority</h2>
+                <div style="display: flex; height: 45px;">
+                    <div onclick="urgent()" id="urgent_div" class="custom-container">Urgent
+                        <img id="urgent_img" style="margin-left: 10px;" src="../assets/img/urgentImg.png">
+                    </div>
+                    <div onclick="medium()" id="medium_div" class="custom-container" style="margin-left: 10px; margin-right: 10px;">Medium
+                        <img id="medium_img" style="margin-left: 10px;" src="../assets/img/medium.png">
+                    </div>
+                    <div onclick="low()" id="low_div" class="custom-container">Low
+                        <img id="low_img" style="margin-left: 10px;" src="../assets/img/low.png">
+                    </div>
+                </div>
+            </div>
+
+            <div id="assignedTo" class="input_fields">
+                <div id="assignedToDiv2" style="position: relative;">
+                    <h2>Assigned to</h2>
+                    <input id="assignedTo1" class="input_field font_size_19px placeholder" type="text" placeholder="Select contacts to assign" onkeyup="showFilteredContacts()">
+                    <img id="arrow1" onclick="showContacts()" class="corner_image" src="../assets/img/arrow_drop_down.png">
+                </div>
+                <div id="scrollContainer" class="scroll-container" style="display: none;">
+                </div>
+                <div id="addNewContactButton" style="display: none;" class="addNewContact" onclick="forwardingToAddNewContact()"> Add new contact <img style="margin-left: 5px; width: 25px; height: 20px" src="../assets/img/person_add.png"></div>
+            </div>
+            <div id="choosedContacts" class="choosedContacts" style="display: none;">
+            </div>
+
+            <div id="Category" class="input_fields">
+                <h2>Category</h2>
+                <div style="position: relative;">
+                    <input readonly id="SelectTaskCategoryDiv" onclick="showOptions()" style="position: relative;" class="input_field font_size_19px placeholder" placeholder="Select task category"> <img id="dropDown2" class="corner_image" src="../assets/img/arrow_drop_down.png"
+                        onclick="showOptions()">
+                </div>
+                <div id="select" style="display: none;">
+                    <div style="cursor: pointer;" onclick="technicalTask()" class="contactDivs"><span style="margin-left: 10px;">Technical Task</span></div>
+                    <div style="cursor: pointer;" onclick="userStory()" class="contactDivs"><span style="margin-left: 10px;">User Story</span></div>
+                </div>
+            </div>
+
+            <div id="Subtasks" class="input_fields">
+                <h2>Subtasks</h2>
+                <input id="special_placeholder" class="input_field font_size_19px placeholder" type="text" placeholder="Add new subtask" onclick="addSubtask()">
+                <div id="cornerImages" style="position: relative;">
+                    <img onclick="addSubtask()" class="corner_image" style="height: 12px; width: 12px; right: 9px;" src="../assets/img/+.png">
+                </div>
+            </div>
+
+            <img id="animatedImgAddTask" src="../assets/img/Added-to-board 1.png"/>
+
+            <!-- 2 Buttons (Clear x, Create Task) -->
+            <div id="clearCreateTask" class="clearCreateTask">
+                <button class="secondaryButton" onclick="clearFields()">Clear x</button>
+                <button class="button2" onclick="showWarning(), createTask()">Create Task <img src="../assets/img/CreateTask.png"></button>
+            </div>
+    
+        </div>
+
+    </div>
+
+    <div w3-include-html="../assets/templates/navbarMobile.html"></div>
+    
+</body>
+
+</html>

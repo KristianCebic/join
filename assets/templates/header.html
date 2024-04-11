@@ -1,0 +1,44 @@
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join</title>
+    <link rel="stylesheet" href="..\css\header.css">
+</head>
+
+<body>
+    <header id="header">
+        <div><img src="../assets/img/logo-white.png" class="logo" alt="Logo"></div>
+
+        <div class="header-mobile">
+            <div class="header-right">
+                <p> Kanban Project Managment Tool</p>
+                <a href="..\html\help.html"><img src="../assets/img/help.png" alt="help"></a>
+
+            </div>
+            <svg onclick="toggleMenu()" width="56px" height="56px" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+        
+                <circle cx="55" cy="55" r="52.5" fill="none" stroke="white" stroke-width="3" />
+            
+                
+                <circle cx="55" cy="55" r="45" fill="white" />
+            
+                <text x="55" y="62" font-size="28px" font-family="Arial" font-weight="bold" text-anchor="middle" fill="#4589FF" id="loginname"></text>
+            </svg>
+        </div>
+
+
+    </header>
+    <div id="menuContent" class="hidden">
+        <a target="_blank" rel="noopener noreferrer" onclick="checkIndex('LegalNotice')">Legal noticee</a>
+        <a target="_blank" rel="noopener noreferrer" onclick="checkIndex('PrivacyPolicy')">Privacy Policy</a>
+        <a href="..\html\index.html">Log Out</a>
+    </div>
+
+
+
+</body>
+
+
+</html>

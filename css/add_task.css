@@ -1,0 +1,694 @@
+.corner_image1 {
+    position: absolute;
+    bottom: 39px;
+    right: 8px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    margin: 0;
+}
+
+html {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.menu_version {
+    width: 186px;
+    height: 205px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: -160px;
+}
+
+.privacy_legal {
+    display: flex;
+    flex-direction: column;
+    height: 383px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu_divs {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-radius: 8px;
+    padding: 8px 30px 8px 30px;
+    gap: 8px;
+}
+
+.menu_divs:hover {
+    background-color: rgb(210, 227, 255);
+}
+
+.img_property {
+    margin-right: 8px;
+}
+
+.onHover:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.cursonPointer:hover {
+    cursor: pointer;
+}
+
+.input_fields {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.input_field {
+    width: 100%;
+    height: 64px;
+    padding: 13px 16px;
+    border: none;
+    border-bottom: 1px solid #D1D1D1;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    font-size: 32px;
+    outline: none;
+    cursor: pointer;
+}
+
+.input_field:hover {
+    border-bottom: 1px solid #95c2cf;
+}
+
+.input_field::placeholder {
+    color: #D1D1D1;
+}
+
+.input_field_gray {
+    width: 100%;
+    height: 103px;
+    padding: 13px 16px;
+    border: 1px solid #D1D1D1;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 0 20px 20px 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.input_field_gray::placeholder {
+    color: #D1D1D1;
+    position: absolute;
+    top: 20px;
+}
+
+.corner_image {
+    position: absolute;
+    bottom: 20px;
+    right: 12px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.corner_image:hover {
+    padding: 7px;
+    background-color: #bcceed;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.specialBorder {
+    cursor: pointer;
+}
+
+.specialBorder:hover {
+    border: 2px;
+    border-radius: 100%;
+    background-color: #bcceed;
+    transition: background-color 0.3s ease;
+}
+
+.corner_image2 {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    padding: 4px;
+}
+
+.corner_image2:hover {
+    padding: 4px;
+    border-radius: 100%;
+    background-color: #bcceed;
+    transition: background-color 0.3s ease;
+}
+
+.font_size_19px {
+    font-size: 15px;
+}
+
+.custom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    padding: 2px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(232 227 227);
+}
+
+h2 {
+    margin-bottom: 0;
+    margin-top: 20px;
+    color: rgb(66, 82, 110);
+}
+
+.placeholder {
+    color: black;
+}
+
+.placeholder::placeholder {
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+
+#special_placeholder::placeholder {
+    color: #D1D1D1;
+}
+
+.space_between {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.scrollBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+    width: 24px;
+}
+
+#urgent_div:hover {
+    border-bottom: 2px solid rgb(255, 68, 9);
+    cursor: pointer;
+}
+
+.noHover {
+    border-bottom: none !important;
+}
+
+#medium_div:hover {
+    border-bottom: 2px solid rgb(255, 168, 0);
+    cursor: pointer;
+}
+
+#low_div:hover {
+    border-bottom: 2px solid rgb(122, 226, 41);
+    cursor: pointer;
+}
+
+.ClearX {
+    font-size: 23px;
+    width: 100px;
+    height: 30px;
+    padding: 16px 10px 16px 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(157, 152, 152);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.clearCreateTask {
+    display: flex;
+    margin-top: 3%;
+}
+
+.CreateTask {
+    background-color: rgb(69, 137, 255);
+    font-size: 23px;
+    width: 145px;
+    height: 30px;
+    padding: 16px 10px 16px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.ClearX:hover {
+    border-color: blue;
+    color: blue;
+}
+
+#xImg {
+    color: rgb(0, 0, 0);
+}
+
+.footerMobile {
+    display: none;
+}
+
+.button1 {
+    width: 136px;
+    height: 61px;
+    border-radius: 10px;
+    padding: 16px 10px 16px 10px;
+    border: 1px solid #647188;
+    background-color: white;
+    font-size: 23px;
+    line-height: 27.6px;
+    font-weight: 400;
+    color: #647188;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.button1:hover {
+    border: 3px solid #4589FF;
+    color: #4589FF;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: border-color 0.1s ease-in-out, color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+.xAndHacken {
+    display: flex;
+    bottom: 20px;
+    right: 12px;
+    position: absolute;
+    align-items: center;
+}
+
+.smallPoint {
+    background: black;
+    height: 3px;
+    width: 3px;
+    border-radius: 100%;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+.line {
+    height: 20px;
+    width: 0.5px;
+    background-color: rgb(209, 209, 209);
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.button2 {
+    width: 174px;
+    height: 60px;
+    padding: 16px 10px 16px 10px;
+    border-radius: 10px;
+    background-color: #4589FF;
+    color: white;
+    line-height: 20px;
+    font-size: 17px;
+    font-weight: 400;
+    border: 0;
+    letter-spacing: 0em;
+    text-align: left;
+    cursor: pointer;
+}
+
+.button2:hover {
+    background-color: rgb(0, 56, 255);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+.classForContactButtons {
+    color: white;
+    background-color: rgb(69, 137, 255);
+}
+
+.classForContactButtons:hover {
+    background-color: rgb(0, 56, 255);
+}
+
+.display_flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobileImgs {
+    height: 24px;
+    width: 20.31px;
+    margin-bottom: 6px;
+}
+
+.image {
+    filter: brightness(0) invert(1);
+}
+
+.input_field_warning {
+    width: 100%;
+    height: 64px;
+    padding: 13px 16px;
+    border: none;
+    border-bottom: 1px solid #dd3333;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.corner_image1 {
+    position: absolute;
+    bottom: 39px;
+    right: 8px;
+}
+
+.input_field_warning1 {
+    width: 100%;
+    padding: 13px 16px;
+    border: 1px solid #dd3333;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.warning_divs {
+    color: rgb(255, 161, 172);
+}
+
+.contactDivs {
+    width: 95%;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactDivs:hover {
+    background-color: rgb(160, 189, 236);
+}
+
+.addNewContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(69, 137, 255);
+    height: 50px;
+    width: 80%;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.choosedContacts {
+    height: 40px;
+    width: 100%;
+}
+
+.addNewContact:hover {
+    background-color: rgb(0, 56, 255);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.1s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.subTaskDivs {
+    width: 95%;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.1s ease;
+    cursor: pointer;
+}
+
+.subTaskDivs:hover {
+    background-color: rgb(160, 189, 236);
+}
+
+.circleTag {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: blue;
+    border: 2px solid white;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cornerImg {
+    bottom: 4px;
+    right: 3px;
+    position: absolute;
+    padding: 7px;
+}
+
+.styleForContactButtons {
+    width: 95%;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: rgba(69, 137, 255, 1);
+    border-radius: 5px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(69, 137, 255, 1);
+}
+
+.scroll-container {
+    height: 10vh;
+    overflow-y: auto;
+    border: 0;
+}
+
+#mainContainer {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.scroll-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: rgba(69, 137, 255, 1);
+    border-radius: 5px;
+}
+
+a {
+    flex-direction: column;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(69, 137, 255, 1);
+}
+
+.scroll-container::-webkit-scrollbar-thumb:active {
+    background: rgba(69, 137, 255, 1);
+}
+
+.scroll-container2 {
+    width: 80%;
+    height: 72vh;
+    overflow-x: hidden;
+    padding-right: 25px;
+    overflow-y: auto;
+    padding-top: 20px;
+}
+
+.secondaryButton {
+    font-size: 17px;
+}
+
+.scroll-container2::-webkit-scrollbar {
+    width: 8px;
+    background-color: rg;
+    height: 50px;
+}
+
+.scroll-container2::-webkit-scrollbar-thumb {
+    background: rgba(69, 137, 255, 1);
+    border-radius: 5px;
+}
+
+.scroll-container2::-webkit-scrollbar-thumb:hover {
+    background: rgba(69, 137, 255, 1);
+}
+
+.scroll-container2::-webkit-scrollbar-thumb:active {
+    background: rgba(69, 137, 255, 1);
+}
+
+#description {
+    padding: 20px;
+    resize: vertical;
+}
+
+#animatedImgAddTask {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    animation: moveDown 3s ease-in-out 0s 1 normal forwards, hide 1s 2s 1 normal forwards;
+}
+
+
+@keyframes moveDown {
+    0% {
+        top: 0;
+        z-index: 1005;
+    }
+
+    50% {
+        top: 50%;
+    }
+
+    100% {
+        top: 50%;
+    }
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.menuLeft {
+    display: none;
+}
+
+@media only screen and (min-width: 360px) {
+    .font_size_19px {
+        font-size: 16px;
+    }
+
+    body {
+        font-size: 15px;
+    }
+
+    .secondaryButton {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-height: 708px){
+    .scroll-container2 {
+        height: 500px;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    a {
+        flex-direction: row;
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+
+    #mainContainer{
+        justify-content: flex-start;
+    }
+
+    .scroll-container2{
+        margin-left: 30px;
+        width: 550px;
+    }
+
+    .font_size_19px{
+        font-size: 18px;
+    }
+
+    .scroll-container{
+        width: 500px;
+    }
+
+    .secondaryButton {
+        font-size: 20px;
+    }
+
+    .button2{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 771px) {
+    .menuLeft {
+        display: flex;
+        min-width: 200px;
+        justify-content: space-between;
+        border: 1px solid var(--grey);
+        flex-direction: column;
+    }
+
+    .scroll-container2 {
+        height: 85vh;
+    }
+}
+
+.displayFlex {
+    display: flex;
+}
+
+.profile-badges {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .profile-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    width: 32px;
+    height: 32px;
+    gap: 10px;
+    border-radius: 45px;
+    border: 1px solid white;
+  }

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Josefin+Sans:ital,wght@0,700;1,700&family=Open+Sans:wght@300;600&family=Raleway:wght@500&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <div class="main_container">
+
+        <section class="left_section">
+
+            <div class="menu_version">
+                <div class="menu_divs cursonPointer"><img class="img_property" src="./img/summary.png" alt="Summary">Summary</div>
+                <div class="menu_divs cursonPointer"><img class="img_property" src="./img/add_task.png" alt="Add Task">Add Task</div>
+                <div class="menu_divs cursonPointer"><img class="img_property" src="./img/board (2).png" alt="Board">Board</div>
+                <div class="menu_divs cursonPointer"><img class="img_property" src="./img/contacts (2).png" alt="Contacts">Contacts</div>
+            </div>
+
+            <div class="privacy_legal">
+                <div class="onHover" style="width: 116px; height: 35px; padding: 8px; gap: 8px;">Privacy Policy</div>
+                <div class="onHover" style="width: 110px; height: 33px; padding: 8px; gap: 8px;">Legal Notice</div>
+            </div>
+
+        </section>
+
+    <div class="space_between">
+
+        <div class="main_section">
+
+            <div class="input_fields">
+                <input class="input_field" type="text" placeholder="Enter a title">
+            </div>
+
+            <div class="input_fields">
+                <h2 >Description</h2>
+                <input class="input_field_gray" type="text" placeholder="Enter a Description">
+                <img class="corner_image" src="./img/3 linien.png">
+            </div>
+
+            <div class="input_fields">
+                <h2>Due date</h2>
+                <input class="input_field font_size_19px" type="text" placeholder="dd/mm/yyyy">
+                <img class="corner_image" src="./img/kalendar.png">
+            </div>
+
+            <div class="input_fields">
+                <h2>Priority</h2>
+                <div style="display: flex; height: 45px;">
+                    <div id="urgent_div" class="custom-container">Urgent
+                        <img style="margin-left: 10px;" src="./img/urgent.png">
+                    </div>
+                    <div id="medium_div" class="custom-container" style="margin-left: 10px; margin-right: 10px;">Medium
+                        <img style="margin-left: 10px;" src="./img/medium.png">
+                    </div>
+                    <div id="low_div" class="custom-container">Low
+                        <img style="margin-left: 10px;" src="./img/low.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="input_fields">
+                <h2>Assigned to</h2>
+                <input class="input_field font_size_19px placeholder" type="text" placeholder="Select contacts to assign">
+                <img class="corner_image" src="./img/arrow_drop_down.png">
+            </div>
+            
+            
+            <div class="input_fields">
+                <h2>Category</h2>
+                <input class="input_field font_size_19px placeholder" type="text" placeholder="Select task category">
+                <img class="corner_image" src="./img/arrow_drop_down.png">
+            </div>
+
+            <div class="input_fields">
+                <h2>Subtasks</h2>
+                <input id="special_placeholder" class="input_field font_size_19px placeholder" type="text" placeholder="Add new subtask">
+                <img class="corner_image" src="./img/+.png">
+            </div>
+
+        </div>
+
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; width: 720px;">
+        <div class="scrollBar">
+            <img style="width: 10px; height: 4px; margin-top: 50px;" src="./img/up.png">
+            <img style="height: 53px; width: 7px;" src="./img/balken.png">
+            <img style="height: 4px; width: 10px; margin-bottom: -15px;" src="./img/down.png">
+        </div>
+
+        <div class="clearCreateTask">
+            <img style="margin-right: 20px;" src="./img/Clear X.png">
+            <img src="./img/Create_Task.png">
+        </div>
+    </div>
+
+    </div>
+</body>
+
+
+</html>
+

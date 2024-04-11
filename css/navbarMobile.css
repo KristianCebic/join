@@ -1,0 +1,34 @@
+.menuListMobile {
+    display: none;
+}
+
+@media (max-width: 770px) {
+    .menuListMobile {
+        display: flex;
+        position: fixed;
+        cursor: pointer;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 90px;
+        background-color: white;
+        align-items: center;
+        justify-content: space-around;
+        border-top: 1px solid lightgray;
+    }
+}
+
+@media (max-width:480px) {
+    .menuListMobile a {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 400px) {
+    .menuListMobile a {
+        font-size: 14px;
+    }
+    .menuListMobile img {
+        height: 20px;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favIcon.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join</title>
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/board.css" />
+    <link rel="stylesheet" href="../css/openTaskCard.css" />
+    <link rel="stylesheet" href="../css/navbarMobile.css" />
+  </head>
+
+  <body id="body1" onload="initBoards(), closeDiv(), eventListenerForMenuContent('body1')">
+    <!-- HEADER -->
+    <div w3-include-html="../assets/templates/header.html"></div>
+
+    <!-- PARENT CONTAINER -->
+    <div id="mainDiv">
+      <div id="cardID" onclick="closeOpenTask()">
+        <div class="openTask" id="openTask"></div>
+      </div>
+
+      <div
+        id="AddTask-overlay"
+        class="main_section"
+      ></div>
+
+      <!-- LEFT NAVIGATION BAR -->
+      <div w3-include-html="../assets/templates/navBar.html"></div>
+      
+      <!-- MAIN DIV -->
+      <div class="mainTask">
+        <div class="menuRighttop">
+          <div class="menuRightTopFirst">
+            <div class="formContainer">
+              <form>
+                <input
+                  id="searchTask"
+                  onkeyup="filterTasks()"
+                  placeholder="Find Task"
+                />
+                <div class="board_line"></div>
+                <img style="cursor: pointer;" src="../assets/img/searchLupe.png"/>
+              </form>
+            </div>
+
+            <button id="board_addTaskBTN" onclick="showMainTask('toDo')">
+              Add task +
+            </button>
+          </div>
+        </div>
+
+        <div class="toDoBoard">
+          <div id="toDoBoard" class="toDoBoardQuery"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div
+      w3-include-html="../assets/templates/navbarMobile.html"
+      class="menuListMobile"
+    ></div>
+    <img id="animatedImg" src="../assets/img/Added-to-board 1.png" alt="" />
+
+    <div class="overlay" id="overlay"></div>
+  </body>
+  <script src="../js/dragDropTaskManagement.js"></script>
+  <script src="../js/dragDropTaskManagement2.js"></script>
+  <script src="../js/board2.js"></script>
+  <script src="../js/board.js"></script>
+  <script src="../js/contactManagement.js"></script>
+  <script src="../js/storage.js"></script>
+  <script src="../js/templatesBoard.js"></script>
+  <script src="../js/templatesBoard2.js"></script>
+</html>

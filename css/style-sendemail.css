@@ -1,0 +1,466 @@
+body {
+  margin: 0;
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(69, 137, 255, 1);
+  overflow: hidden;
+}
+
+button {
+  height: 48px;
+  border-radius: 8px;
+  padding: 10px, 18px, 10px, 18px;
+  background-color: rgba(69, 137, 255, 1);
+  color: white;
+  gap: 10px;
+  border: 0;
+  font-size: 23px;
+}
+button:hover {
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 8px, 16px, 8px, 16px;
+  background-color: rgba(0, 93, 255, 1);
+  color: white;
+  gap: 10px;
+  border: 0;
+  font-size: 23px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
+  animation-duration: 100ms;
+  animation-timing-function: ease-in-out;
+}
+
+button:active {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(69, 137, 255, 1);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
+  animation-delay: 1ms;
+}
+
+#guest-login {
+  width: 197px;
+  border: 1px solid rgba(100, 113, 136, 1);
+  padding: 10px, 35px, 10px, 35px;
+  gap: 10px;
+  background-color: white;
+  color: rgba(100, 113, 136, 1);
+}
+#guest-login:hover {
+  border: 2px solid rgba(69, 137, 255, 1);
+  padding: 10px, 18px, 10px, 18px;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(69, 137, 255, 1);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
+}
+#guest-login:active {
+  border: 1px solid rgba(0, 93, 255, 1);
+  padding: 10px, 18px, 10px, 18px;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 93, 255, 1);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
+}
+
+#mail {
+  width: 100%;
+}
+
+#sendemail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding: 10px, 35px, 10px, 35px;
+  position: relative;
+  gap: 32px;
+}
+
+input[type="checkbox"]:disabled {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  border: 2px solid #4589ff;
+  color: rgba(69, 137, 255, 1);
+}
+input[type="checkbox"]:checked {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  border: 2px solid rgba(69, 137, 255, 1);
+  border-color: rgba(69, 137, 255, 1);
+}
+input[type="checkbox"]:hover {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  border: 2px solid rgba(69, 137, 255, 1);
+  color: rgba(237, 242, 250, 1);
+}
+input::placeholder {
+  color: rgba(209, 209, 209, 1);
+}
+input {
+  border: 0;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+input:focus-visible{
+  outline: 0px;
+}
+a {
+  padding: 8px;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  padding: 8px;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: rgba(0, 93, 255, 1);
+}
+
+#forgotPassword:hover {
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+#forgotPassword {
+  font-size: 16px;
+  height: 19px;
+  color: rgba(0, 93, 255, 1);
+  gap: 10px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.join-logo {
+  position: absolute;
+  top: 80px;
+  left: 77px;
+  width: 50px;
+}
+.header {
+  position: absolute;
+  font-size: 23px;
+  display: flex;
+  padding: 0;
+  top: 67px;
+  right: 77px;
+  gap: 35px;
+  width: 315px;
+  height: 48px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header span {
+  height: 28px;
+}
+
+.header button {
+  width: 110px;
+  height: 48px;
+}
+
+.login-header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.center {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.login-box {
+  position: absolute;
+  border-radius: 30px;
+  padding: 48px, 88px, 48px, 88px;
+  gap: 32px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.064);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: clamp(250px, 40%, 45%);
+  height: 530px;
+}
+
+#arrow-left-btn {
+  width: 37px;
+  height: 37px;
+  background-color: white;
+  position: absolute;
+  left: 4%;
+  padding: 0;
+}
+#arrow-left-btn:hover {
+  width: 37px;
+  height: 37px;
+  background-color: rgba(227, 238, 255, 1);
+  position: absolute;
+  left: 4%;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 42px;
+  padding: 8px, 16px, 8px, 16px;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.4);
+  animation-duration: 100ms;
+  animation-timing-function: ease-in-out;
+}
+
+.login-box h1 {
+  margin: 0;
+  font-size: 20px;
+  display: flex;
+  text-align: center;
+  padding-bottom: 8px;
+  border-bottom: 3px solid rgba(69, 137, 255, 1);
+}
+
+.login-box span {
+  font-size: 19px;
+  margin: 16px;
+  width: 90%;
+}
+
+.long-text {
+  margin: 8px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 90%;
+  max-width: 422px;
+  height: 48px;
+}
+
+.form-inner-field {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 380px;
+  gap: 10px;
+  align-items: center;
+  color: rgba(209, 209, 209, 1);
+}
+
+.form-outline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px, 21px, 12px, 21px;
+  width: 100%;
+  height: 48px;
+  gap: 10px;
+  border: 0;
+  border-bottom: 1px solid rgba(209, 209, 209, 1);
+
+  background-color: rgba(255, 255, 255, 1);
+}
+.form-outline img {
+  width: 24px;
+  height: 24px;
+}
+
+.container-checkbox {
+  font-size: 16px;
+  width: 90%;
+  max-width: 355px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  align-items: last baseline;
+  position: absolute;
+  height: 35px;
+  justify-content: space-between;
+  width: 240px;
+  bottom: 70px;
+}
+
+.intro {
+  background-color: #4589ff;
+  display: flex;
+  position: relative;
+  z-index: 3;
+  animation: backgroundcolor 1s ease-in-out 1s none;
+}
+
+.color {
+  animation: hide-show 1s ease-in-out 1s forwards;
+}
+.logo {
+  width: 25vw;
+  top: 33%;
+  left: 33%;
+
+  position: absolute;
+  animation: logo 1s ease-in-out 1s forwards;
+}
+
+@keyframes resetPasswordAnimation {
+  0% {
+    display: block;
+    opacity: 0;
+    transform: translateY(-900px);
+  }
+  100% {
+    display: none;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#sendEmailImg {
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  display: none;
+  animation: resetPasswordAnimation 2s ease-in-out;
+}
+
+
+@keyframes logo {
+  0% {
+    width: 25vw;
+    top: 20%;
+    left: 33%;
+   
+  }
+  100% {
+    width: 56px;
+    top: -100px;
+    left: 4%;
+
+  }
+}
+@keyframes backgroundcolor {
+  0% {
+    background-color: #4589ff;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  100% {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+@keyframes hide-show {
+  50% {
+    fill: white;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    fill: #4589ff;
+    
+  }
+}
+
+
+
+.join-logo {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 70px;
+}
+
+.login-header {
+  display: flex;
+  width: 65%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#arrow-left-btn {
+  width: 37px;
+  height: 37px;
+  background-color: white;
+  position: absolute;
+  left: 17px;
+  padding: 0;
+  top: 32px;
+  right: 0;
+}
+
+.login-box span {
+  font-size: 19px;
+  margin: 16px;
+}
+
+
+
+@media(max-width: 460px){
+  #sendEmailImg {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    display: none;
+    transition: opacity 3s, transform 3s ease-in-out; 
+  }
+  
+#arrow-left-btn {
+  width: 37px;
+  height: 37px;
+  background-color: white;
+  position: absolute;
+  left: 4%;
+  padding: 0;
+  top: 33px;
+  right: 0;
+}
+}
+
+@media(max-width: 364px){
+  .login-box span {
+    font-size: 19px;
+    margin: 16px;
+}
+}
+
+
+

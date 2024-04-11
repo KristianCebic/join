@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favIcon.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join</title>
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/style-editcontacts.css" />
+    <link rel="stylesheet" href="../css/style-contacts.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/navbarMobile.css" />
+    <script src="../js/storage.js"></script>
+    <script src="../js/board.js"></script>
+    <script src="../js/contacts2.js"></script>
+    <script src="../js/contacts.js"></script>
+  </head>
+
+  <body id="bodyContacts" onload="initContacts(), eventListenerForMenuContent('bodyContacts')">
+
+    <div w3-include-html="../assets/templates/header.html"></div>
+    
+    <!-- MAIN DIV -->
+    <div class="contactsBoard">
+
+      <!-- MENÜ LEFT -->
+      <div w3-include-html="../assets/templates/navBar.html"></div>
+      
+      <!-- DIV FÜR KONTAKTE + BUTTON ADD CONTACT -->
+      <div class="contacts-list-box">
+        <div class="button-fixed">
+          <button id="addNewContact" onclick="showAddContact()">
+            Add new Contact
+            <img src="../assets/img/person_add.svg"/>
+          </button>
+        </div>
+        <div id="contact-list" class="contact-list-scroll scroll"></div>
+      </div>
+      
+      <!-- MAIN OVERLAY -->
+      <div id="main-mobile-Overlay" class="main-mobile-Overlay">
+        <div class="contacts-pc-display">
+          <div id="floating-contact-box" class="floating-contact-box d-none">
+            <div class="floating-contact-box-header">
+              <div id="profile-badge" class="profile-badge">
+                <span id="contactsNameTag">AM</span>
+              </div>
+              <div class="floating-contact-box-header-center">
+                <h1 id="contactsName">Anton Mayer</h1>
+                <div class="edit-delete">
+                  <a onclick="showEditContact()"
+                    ><img src="../assets/img/edit.svg" alt="" />Edit</a
+                  >
+                  <a onclick ="deleteContact()"
+                    ><img src="../assets/img/delete.svg" alt="" />Delete</a
+                  >
+                </div>
+              </div>
+            </div>
+  
+            <h2>Contact Information</h2>
+            <div class="floating-contact-box-info">
+              <h3>Email</h3>
+              <span id="contactsEmail" class="contact-frame-mail"
+                >antom@gmail.com</span
+              >
+              <h3>Phone</h3>
+              <span id="contactsPhone" class="contact-text-phone"
+                >+49 1111 111 11 1</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ADD NEW CONTACT SECTION -->
+      <div class="main_section" id="main_section"></div>
+
+      <div class="overlay" id="overlay" onclick="closeOverlay()"></div>
+      
+    </div>
+
+    <!-- MENÜ FÜRS HANDY -->
+    <div w3-include-html="../assets/templates/navbarMobile.html" class="menuListMobile"></div>
+
+  </body>
+  
+</html>

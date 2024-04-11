@@ -1,0 +1,92 @@
+header {
+    height: 35px !important;
+}
+
+.title {
+    font-size: 61px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.positioning {
+    overflow-y: auto;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    height: 75vh;
+}
+
+.spaceBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pointOut {
+    display: flex;
+    color: #005DFF;
+    font-size: 33px;
+}
+
+.pointOutSmall {
+    color: #005DFF;
+    font-size: 19px;
+}
+
+.highlight {
+    color: #4589FF;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 100px;
+    width: 37px;
+    height: 37px;
+}
+
+button:hover {
+    background-color: rgba(227, 238, 255, 1);
+    border-radius: 100px;
+}
+
+header {
+    width: -webkit-fill-available;
+}
+
+@media (max-width: 770px) {
+    .positioning {
+        padding-left: 25px;
+    }
+}
+
+@media (max-width: 530px) {
+    .title {
+        font-size: 47px;
+    }
+    .pointOut {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 370px) {
+    .title {
+        font-size: 36px;
+        padding: 8px;
+    }
+    .pointOut {
+        font-size: 16px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 771px) {
+    .positioning {
+        height: 90vh;
+    }
+}
