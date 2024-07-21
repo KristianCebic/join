@@ -483,3 +483,14 @@ body {
         margin-right: 8px;
     }
 }
+
+@media screen and (max-height: 741px) {
+    .form {
+      overflow-y: scroll;
+      height: 180px;
+    }
+  }
+  
+  form {
+    margin-right: 5%;
+  }

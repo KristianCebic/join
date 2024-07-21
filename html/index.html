@@ -99,7 +99,7 @@
 
             <div class="container-checkbox">
               <div onclick="rememberMe()" class="checkbox">
-                <input id="RememberMe" type="checkbox" />
+                <input id="RememberMe" type="checkbox"/>
                 <label for="RememberMe">Remember Me</label>
               </div>
               <a id="forgotPassword" href="sendemail.html">
@@ -107,27 +107,32 @@
               >
             </div>
 
-            <div class="container-checkbox-buttons">
-              <button id="login">Log in</button>
-            
+            <div class="container-checkbox-buttons gap10">
+              <div class="gap10 flex flex-column">
+                <button id="login" class="logInButtons">Log in</button>
+                <button id="guest-login" onclick="guestLogIn()" class="logInButtons">
+                  Guest log in
+                </button>
+              </div>
           </form>
-          <button id="guest-login"onclick="window.location.href = `summary.html?id=0`;">
-         Guest log in
-          </button>
+          
         </div>
       </div>
-      <div class="header-bottom">
-        <span>Not a Join user?</span>
-        <button id="header-signup"onclick="window.location.href='signup.html';"
-        >
-          Sign up
-        </button>
-      </div>
 
-      <footer>
-        <a href="..\html\PrivacyPolicy.html">Privacy Policy</a>
-        <a href="../html/LegalNotice.html">Legal Notice</a>
-      </footer>
+      <div class="flex flexCenter flex-column">
+        <div class="header-bottom">
+          <span>Not a Join user?</span>
+          <button id="header-signup"onclick="window.location.href='signup.html';">
+            Sign up
+          </button>
+        </div>
+        
+        <footer>
+          <a href="..\html\PrivacyPolicy.html">Privacy Policy</a>
+          <a href="../html/LegalNotice.html">Legal Notice</a>
+        </footer>
+      </div>
     </div>
+
   </body>
 </html>

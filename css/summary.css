@@ -6,8 +6,7 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
     width: 100vw;
-    height: 85vh;
-    margin-top: 3%;
+    height: 100%;
 }
 
 .scrolbar {
@@ -73,7 +72,7 @@ header {
     height: 100%;
     padding: 28px 48px 28px 48px;
     border-radius: 30px;
-    gap: 35px;
+    gap: 15px;
     background-color: #4589FF;
     justify-content: space-evenly;
     color: white;
@@ -149,6 +148,8 @@ header {
 .summaryContent {
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,6 +169,7 @@ header {
     justify-content: space-between;
     gap: 15px;
     flex-wrap: wrap;
+    margin-bottom: 15%;
 }
 
 .tasks {
@@ -416,24 +418,7 @@ header {
     }
 }
 
-@media (min-width: 1099px) {
-    .summary {
-        height: 74vh;
-    }
-
-    .summaryContent {
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 12%;
-        margin-bottom: 5%;
-    }
-}
-
 @media (max-height: 695.20px) and (min-width: 1104px) {
-    .summaryContent {
-        margin-top: 16%;
-    }
-
     .summary {
         height: 85vh;
     }
@@ -449,3 +434,20 @@ header {
     }
 }
 
+@media (max-height: 700px) and (min-width: 1100px) {
+    .summaryContent {
+        margin-top: 38%;
+    }
+}
+
+@media (max-height: 700px) and (min-width: 1205px) {
+    .summaryContent {
+        margin-top: 18%;
+    }
+}
+
+@media (max-width: 950px) {
+    .summaryContent {
+        margin-bottom: 32%;
+    }
+}

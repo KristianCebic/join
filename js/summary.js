@@ -51,7 +51,7 @@ async function welcomeUser() {
 
     if (currentName === 'Guest') {
 
-        document.getElementById('comma').innerHTML = '';
+        document.getElementById('firstName').innerHTML = '';
     } else {
         const fullName = currentName;
         const [firstName, lastName] = fullName.split(' ');
@@ -106,9 +106,10 @@ function nearDeadline() {
             nearestTask = task;
         }
     }
+    
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     const formattedDeadline = nearestTask ? new Date(nearestTask.date).toLocaleDateString('en-US', options) : 'Keine fälligen Aufgaben';
-    document.getElementById('deadlineDatum').innerHTML = `${formattedDeadline}`;
+    document.getElementById('UpcomingDeadline').innerHTML = `${formattedDeadline}`;
 }
 
 

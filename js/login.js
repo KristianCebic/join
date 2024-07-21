@@ -154,3 +154,8 @@ async function rememberMe() {
         }
     }
 }
+
+function guestLogIn() {
+    user['name'] = "Guest";
+    window.location.href = `summary.html?id=0`;
+}

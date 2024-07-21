@@ -248,7 +248,8 @@ a:hover {
   width: clamp(250px, 50%, 90%);
   min-width: 300px;
   max-width: 600px;
-  height: 607px;
+  height: 520px;
+  margin-top: 10%;
 }
 
 
@@ -326,8 +327,6 @@ form {
 
 footer {
   display: flex;
-  align-items: last baseline;
-  position: absolute;
   height: 35px;
   justify-content: space-between;
   width: 240px;
@@ -422,7 +421,13 @@ footer {
 
 .join-logo {
   position: absolute;
-  top: 40px;
+  top: 20px;
   left: 40px;
-  width: 70px;
+  width: 40px;
+}
+
+@media screen and (height: 600px) and (width: 1024px) {
+  .login-box {
+    margin-top: unset;
+  }
 }

@@ -204,3 +204,14 @@ h2 {
 #xImg {
     color: rgb(0, 0, 0);
 }
+
+@media screen and (max-height: 741px) {
+    .form {
+      overflow-y: scroll;
+      height: 180px;
+    }
+  }
+  
+  form {
+    margin-right: 5%;
+  }

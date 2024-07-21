@@ -7,6 +7,12 @@
     height: 70vh;
 }
 
+@media screen and (max-height: 740px) {
+    .policyConten {
+        height: 65vh;
+    }
+}
+
 .PrivacyTitel {
     font-size: 61px;
 }

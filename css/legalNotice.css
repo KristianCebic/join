@@ -5,8 +5,8 @@ body {
 .NoticeContent {
     overflow-y: scroll;
     height: 80vh;
-    padding-left: 88px;
-    padding-right: 88px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .NoticeTitel {
